@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('./wallpapersden.com_the-batman-2022-movie-4k_4096x2564.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+.person-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 4%;
+   }
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #d21617;
+    font-size: 18px;
+    font-family: "kdam Thmor Pro", sans-serif;
+}
+
+card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://arthurtuoto.com/wp-content/uploads/2022/03/CAPA-930x620.jpg');
+}
+
+.banner-1:hover {
+    background-image: url('https://w0.peakpx.com/wallpaper/434/821/HD-wallpaper-batman-movie-poster.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://leclaireur.fnac.com/wp-content/uploads/2021/12/zoe-kravitz-the-batman-1256x826.jpeg');
+}
+
+.banner-2:hover {
+    background-image: url('https://i.pinimg.com/736x/09/44/a4/0944a4a3e38e103850390f0bb06c9e56.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/07c53b1e-7aee-477d-8d45-c16c080faa75/new-featurette-for-the-batman-offers-additional-details-on-jeffrey-wrights-jim-gordon.jpg')
+}
+
+.banner-3:hover {
+    background-image: url('https://ew.com/thmb/tfb0z2__nKb-xRX6hVIvd9DGsKs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/The-Batman_7-cc308d6aaeaa4e629651b78bd4f0dffe.jpg')
+}
+
+.banner-4 {
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2022/02/Charada-em-The-Batman.jpg')
+}
+
+.banner-4:hover {
+    background-image: url('https://i0.wp.com/ovicio.com.br/wp-content/uploads/2022/10/20221017-ovicio-paul-dano-charada-batman.jpg?resize=555%2C555&ssl=1')
+}
+
+.banner-5 {
+    background-image: url('https://img.odcdn.com.br/wp-content/uploads/2024/11/27-3-1920x1080.webp')
+}
+
+.banner-5:hover {
+    background-image: url('https://s2-quem.glbimg.com/05RUOwYjw499BgJF7kJnUoNOUVQ=/0x0:2076x3134/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/v/T/qYP86nQYAWxLG9bcJ61A/bkg-cfep230307-011.jpg')
+}
+
+.banner-6 {
+    background-image: url('https://preview.redd.it/bn9ijo29bktd1.png?auto=webp&s=d258175c8721c5b43057a0b7fd4e7939257973ce')
+}
+
+.banner-6:hover {
+    background-image: url('https://i.ytimg.com/vi/NNeaRdXTDE4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gWigqMA8=&rs=AOn4CLAZFPpNtmp_ROk-qBGw2uDUIm8rlQ')
+}
+
+
+footer {
+    background-color: #000000;
+    height: 300px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 50%;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 25px;
+    }
+}
