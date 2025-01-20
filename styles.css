@@ -56,7 +56,8 @@ li:hover {
 
 #trailer-container {
     width: 100%;
-    height: 200px;
+    height: auto;
+    padding: 10px 0 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,8 +73,8 @@ li:hover {
 }
 
 .trailer {
-    width: 40%;
-    margin-left: 60px;
+    width: 50%;
+    margin-left: 50px;
 }
 
 #sinopse {
@@ -213,23 +214,25 @@ section {
 
 .form_Title {
     width: 100%;
-    height: 100%;
-    margin: 20px 0 20px 0;
+    height: 150px;
+    margin: 80px 0 0 0;
     display: flex;
     flex-direction:column;
+    justify-content: center;
     align-items: center;
     background-color: transparent;
 }
 
 .form_Title h1 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 600;
     color: rgb(175,25,34);
     font-family: 'Kdam Thmor Pro', sans-serif;
     background-color: transparent;
 }
 
-/*Formulario*/
 .form_Contato {
     background-color: transparent;   
     display: flex;
@@ -310,9 +313,9 @@ section {
 }
     
 .form_layout button.btn-envia { 
-    background-color:rgb(148, 28, 36); 
-    width:50%; display:block; 
-    margin:auto; cursor:pointer; 
+    background-color:rgb(175,25,34); 
+    width:40%; display:block; 
+    margin: 20px 110px 0 110px; cursor:pointer; 
     border-radius:6px;  
     border:0; 
     padding:0.8em 0em; 
@@ -329,55 +332,66 @@ section {
 
 /*Começa o Responsivo*/
 
-@media(max-width: 768px)
-    .footer-navigation {
-        display: block;
-    }
-
-    nav {
-        display: none;
-    }
+@media(max-width: 768px) {
 
     #banner {
-        background-position: 40%;
+        background-position: 30%;
     }
 
     #trailer-container {
         width: 100%;
-        height: 400px;
+        height: 60vh;
         display: flex;
         flex-direction: column;
     }
 
-    .content {
-        width: 95%;
+    .trailer-container-content {
+        width: 100%;
+        height: 60vh;
         display: flex;
         flex-direction: column;
     }
 
     .trailer {
-        width: 100%;
+        width: 85%;
+        margin-left: -2px;
     }
 
     #sinopse {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 90%;
     }
     .description {
-        width: 100%;
+        width: 90%;
+        text-align: justify;
     }
+
     .button {
         width: 100%;
         margin-top: 30px;
     }
+
     .cards-content {
         grid-template-columns: 1fr;
         margin-top: 150px;
     }
-    .formularioContato {
+
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 25px;
+    }
+
+    .form_Container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+}

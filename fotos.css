@@ -48,7 +48,7 @@ li:hover {
 }
 
 #banner {
-    background-image: url('./wallpapersden.com_the-batman-2022-movie-4k_4096x2564.jpg');
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.30)), url('./wallpapersden.com_the-batman-2022-movie-4k_4096x2564.jpg');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
