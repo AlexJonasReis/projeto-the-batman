@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="./styles.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
 
-<body>
-    <header>
-        <img id="logo" src="./Batman-logo-black-and-white-picture_2560x1440.jpg" />
-        <nav>
-            <ul>
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contatos.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./fotos.html">
-                    <li>Fotos</li>
-                </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <main class="main_content container">
-        <section class="section-seu-codigo container">        
-            <div class="content">                
-                <h1 class="section_title">Fale Conosco</h1>                
-                <div class="box-artigo">
-                       <div class="formularioContato">
-                        <form action="#">
+    <body>
+        <header>
+            <img id="logo" src="./Batman-logo-black-and-white-picture_2560x1440.jpg" />
+            <nav>
+                <ul>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="form_Container">    
+
+            <div class="form_Content">
+
+                <div class="form_Title">
+                    <h1>Fale Conosco</h1>
+                </div>
+
+                <div class="form_Contato">
+                    <div class="form_style">
+                        <div class="form_layout">
                             <label>
                                 <span>Nome</span>
-                                <input type="text" name="nome" required="">
+                                <input type="text" name="nome">
                             </label>
                             <label>
                                 <span>E-mail</span>
@@ -45,41 +50,46 @@
                             </label>    
                             <label>
                                 <span>Assunto</span>
-                                <input type="text" name="assunto" required="">
+                                <input type="text" name="assunto">
                             </label>                        
                             <label>
                                 <span>Mensagem</span>
-                                <textarea name="mensagem" rows="3" required=""></textarea> 
+                                <textarea name="mensagem" cols="30" rows="12"></textarea>
                             </label>                       
-                        <input type="hidden" name="acao" value="enviar">
-                        <button class="btn-envia">Enviar</b></button>
-                    </form>    
-                </div><!--Formulario Contato-->
-                </div><!--Box Artigo-->            
-            </div>
-        </section>
-    </main>
-    <footer>
-        <img style="object-fit: contain;" id="logo" src="./Batman-logo-black-and-white-picture_2560x1440.jpg" />
-        <span>© Todos os direitos reservados</span>
-        <span>Desenvolvido por: Alex Jonas</span>
+                            <input type="hidden" name="acao" value="enviar">
+                            <button class="btn-envia">Enviar</b></button>
+                        </div>
+                    </div>   
+                </div> <!--Formulario Contato-->   
 
-        <nav class="footer-navigation">
-            <ul class="footer-list">
-                <a href="./index.html">
-                    <li>Home</li>
-                </a>
-                <a href="./contato.html">
-                    <li>Contato</li>
-                </a>
-                <a href="./fotos.html">
-                    <li>Fotos</li>
-                </a>
-                <a href="./comentarios.html">
-                    <li>Comentários</li>
-                </a>
-            </ul>
-        </nav>
-    </footer>
-</body>
+            </div>   
+                                
+        </section>
+        
+        <footer>
+
+            <img style="object-fit: contain;" id="logo" src="./Batman-logo-black-and-white-picture_2560x1440.jpg" />
+            <span>© Todos os direitos reservados</span>
+            <span>Desenvolvido por: Alex Jonas</span>
+
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="./contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="./fotos.html">
+                        <li>Fotos</li>
+                    </a>
+                    <a href="./comentarios.html">
+                        <li>Comentários</li>
+                    </a>
+                </ul>
+            </nav>
+
+        </footer>
+        
+    </body>
 </html>
