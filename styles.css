@@ -164,8 +164,9 @@ li:hover {
 }
 
 footer {
+    background-color: black;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
